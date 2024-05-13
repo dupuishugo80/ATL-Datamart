@@ -60,10 +60,11 @@ def clean_column_name(dataframe: pd.DataFrame) -> pd.DataFrame:
 
 
 def main() -> None:
-    # folder_path: str = r'..\..\data\raw'
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    # Construct the relative path to the folder
-    folder_path = os.path.join(script_dir, '..', '..', 'data', 'raw')
+    # # folder_path: str = r'..\..\data\raw'
+    # script_dir = os.path.dirname(os.path.abspath(__file__))
+    # # Construct the relative path to the folder
+    # folder_path = os.path.join(script_dir, '..', '..', 'data', 'raw')
+    folder_path = "C:/Ecole/Archi Decisionnel/ATL-Datamart/data/raw"
 
     parquet_files = [f for f in os.listdir(folder_path) if
                      f.lower().endswith('.parquet') and os.path.isfile(os.path.join(folder_path, f))]
